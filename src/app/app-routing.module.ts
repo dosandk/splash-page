@@ -10,18 +10,12 @@ const routes: Routes = [
   {
     path: 'splash-page',
     component: SplashPageComponent,
-    children: [
-      {
-        path: 'apps-list',
-        component: AppsListComponent,
-        // TODO: implement lazy-loading
-        // children: [
-        //   { path: 'app1', component: SomeComponent },
-        //   { path: 'app1', component: SomeComponent },
-        //   { path: 'app1', component: SomeComponent }
-        // ]
-      },
-    ]
+    children: [{ path: 'apps-list', component: AppsListComponent}]
+  },
+  // TODO: implement lazy-loading for few apps
+  {
+    path: 'reports',
+    loadChildren: 'app/applications/reports.module#ReportsModule',
   }
 ];
 

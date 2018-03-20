@@ -7,7 +7,6 @@ import { SplashPageComponent } from './splash-page/splash-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppsListComponent } from './apps-list/apps-list.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
